@@ -21,5 +21,47 @@ namespace Rejestracja
         {
 
         }
+
+        private void save_btn_Click(object sender, EventArgs e)
+        {
+            if (username_box.Text == "")
+            {
+                MessageBox.Show("Nazwa użytkownika jest pusta");
+                return;
+            }
+
+            if (email_box.Text == "")
+            {
+                MessageBox.Show("Email jest pusty");
+                return;
+            }
+
+            if (password_box.Text == "")
+            {
+                MessageBox.Show("Hasło jest puste");
+                return;
+            }
+
+            if (!terms_check.Checked)
+            {
+                MessageBox.Show("Nie zaakceptowano regulaminu");
+                return;
+            }
+
+            listView1.Items.Add(new ListViewItem(new string[] { username_box.Text, email_box.Text, password_box.Text }));
+
+
+        }
+
+        private void delete_btn_Click(object sender, EventArgs e)
+        {
+           foreach (ListViewItem item in listView1.SelectedItems)
+            {
+                listView1.Items.Remove(item);
+            }
+        
+
+            
+        }
     }
 }

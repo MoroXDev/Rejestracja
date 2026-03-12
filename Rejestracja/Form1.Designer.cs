@@ -28,15 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ListViewItem listViewItem1 = new ListViewItem("");
             username_box = new TextBox();
-            this.email_box = new TextBox();
-            this.password_box = new TextBox();
+            email_box = new TextBox();
+            password_box = new TextBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            checkBox1 = new CheckBox();
-            this.save_btn = new Button();
+            terms_check = new CheckBox();
+            save_btn = new Button();
             delete_btn = new Button();
             listView1 = new ListView();
             SuspendLayout();
@@ -50,18 +49,18 @@
             // 
             // email_box
             // 
-            this.email_box.Location = new Point(58, 108);
-            this.email_box.Name = "email_box";
-            this.email_box.Size = new Size(151, 23);
-            this.email_box.TabIndex = 1;
+            email_box.Location = new Point(58, 108);
+            email_box.Name = "email_box";
+            email_box.Size = new Size(151, 23);
+            email_box.TabIndex = 1;
             // 
             // password_box
             // 
-            this.password_box.Location = new Point(58, 165);
-            this.password_box.Name = "password_box";
-            this.password_box.PasswordChar = '*';
-            this.password_box.Size = new Size(151, 23);
-            this.password_box.TabIndex = 2;
+            password_box.Location = new Point(58, 165);
+            password_box.Name = "password_box";
+            password_box.PasswordChar = '*';
+            password_box.Size = new Size(151, 23);
+            password_box.TabIndex = 2;
             // 
             // label1
             // 
@@ -92,24 +91,25 @@
             label3.TabIndex = 5;
             label3.Text = "Hasło";
             // 
-            // checkBox1
+            // terms_check
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(58, 194);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(136, 19);
-            checkBox1.TabIndex = 6;
-            checkBox1.Text = "Akceptuje regulamin";
-            checkBox1.UseVisualStyleBackColor = true;
+            terms_check.AutoSize = true;
+            terms_check.Location = new Point(58, 194);
+            terms_check.Name = "terms_check";
+            terms_check.Size = new Size(136, 19);
+            terms_check.TabIndex = 6;
+            terms_check.Text = "Akceptuje regulamin";
+            terms_check.UseVisualStyleBackColor = true;
             // 
             // save_btn
             // 
-            this.save_btn.Location = new Point(28, 277);
-            this.save_btn.Name = "save_btn";
-            this.save_btn.Size = new Size(99, 30);
-            this.save_btn.TabIndex = 7;
-            this.save_btn.Text = "Zapisz";
-            this.save_btn.UseVisualStyleBackColor = true;
+            save_btn.Location = new Point(28, 277);
+            save_btn.Name = "save_btn";
+            save_btn.Size = new Size(99, 30);
+            save_btn.TabIndex = 7;
+            save_btn.Text = "Zapisz";
+            save_btn.UseVisualStyleBackColor = true;
+            save_btn.Click += save_btn_Click;
             // 
             // delete_btn
             // 
@@ -119,10 +119,10 @@
             delete_btn.TabIndex = 8;
             delete_btn.Text = "Usuń";
             delete_btn.UseVisualStyleBackColor = true;
+            delete_btn.Click += delete_btn_Click;
             // 
             // listView1
             // 
-            listView1.Items.AddRange(new ListViewItem[] { listViewItem1 });
             listView1.Location = new Point(437, 32);
             listView1.Name = "listView1";
             listView1.Size = new Size(256, 275);
@@ -136,13 +136,13 @@
             ClientSize = new Size(800, 450);
             Controls.Add(listView1);
             Controls.Add(delete_btn);
-            Controls.Add(this.save_btn);
-            Controls.Add(checkBox1);
+            Controls.Add(save_btn);
+            Controls.Add(terms_check);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(this.password_box);
-            Controls.Add(this.email_box);
+            Controls.Add(password_box);
+            Controls.Add(email_box);
             Controls.Add(username_box);
             Name = "Form1";
             Text = "Form1";
@@ -158,7 +158,7 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private CheckBox checkBox1;
+        private CheckBox terms_check;
         private Button save_btn;
         private Button delete_btn;
         private ListView listView1;
