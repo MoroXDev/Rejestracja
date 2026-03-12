@@ -28,38 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            ListViewItem listViewItem1 = new ListViewItem("");
+            username_box = new TextBox();
+            this.email_box = new TextBox();
+            this.password_box = new TextBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             checkBox1 = new CheckBox();
-            button1 = new Button();
-            button2 = new Button();
+            this.save_btn = new Button();
+            delete_btn = new Button();
+            listView1 = new ListView();
             SuspendLayout();
             // 
-            // textBox1
+            // username_box
             // 
-            textBox1.Location = new Point(58, 50);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(151, 23);
-            textBox1.TabIndex = 0;
+            username_box.Location = new Point(58, 50);
+            username_box.Name = "username_box";
+            username_box.Size = new Size(151, 23);
+            username_box.TabIndex = 0;
             // 
-            // textBox2
+            // email_box
             // 
-            textBox2.Location = new Point(58, 108);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(151, 23);
-            textBox2.TabIndex = 1;
+            this.email_box.Location = new Point(58, 108);
+            this.email_box.Name = "email_box";
+            this.email_box.Size = new Size(151, 23);
+            this.email_box.TabIndex = 1;
             // 
-            // textBox3
+            // password_box
             // 
-            textBox3.Location = new Point(58, 165);
-            textBox3.Name = "textBox3";
-            textBox3.PasswordChar = '*';
-            textBox3.Size = new Size(151, 23);
-            textBox3.TabIndex = 2;
+            this.password_box.Location = new Point(58, 165);
+            this.password_box.Name = "password_box";
+            this.password_box.PasswordChar = '*';
+            this.password_box.Size = new Size(151, 23);
+            this.password_box.TabIndex = 2;
             // 
             // label1
             // 
@@ -100,38 +102,48 @@
             checkBox1.Text = "Akceptuje regulamin";
             checkBox1.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // save_btn
             // 
-            button1.Location = new Point(28, 277);
-            button1.Name = "button1";
-            button1.Size = new Size(99, 30);
-            button1.TabIndex = 7;
-            button1.Text = "Zapisz";
-            button1.UseVisualStyleBackColor = true;
+            this.save_btn.Location = new Point(28, 277);
+            this.save_btn.Name = "save_btn";
+            this.save_btn.Size = new Size(99, 30);
+            this.save_btn.TabIndex = 7;
+            this.save_btn.Text = "Zapisz";
+            this.save_btn.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // delete_btn
             // 
-            button2.Location = new Point(135, 277);
-            button2.Name = "button2";
-            button2.Size = new Size(105, 30);
-            button2.TabIndex = 8;
-            button2.Text = "Usuń";
-            button2.UseVisualStyleBackColor = true;
+            delete_btn.Location = new Point(135, 277);
+            delete_btn.Name = "delete_btn";
+            delete_btn.Size = new Size(105, 30);
+            delete_btn.TabIndex = 8;
+            delete_btn.Text = "Usuń";
+            delete_btn.UseVisualStyleBackColor = true;
+            // 
+            // listView1
+            // 
+            listView1.Items.AddRange(new ListViewItem[] { listViewItem1 });
+            listView1.Location = new Point(437, 32);
+            listView1.Name = "listView1";
+            listView1.Size = new Size(256, 275);
+            listView1.TabIndex = 9;
+            listView1.UseCompatibleStateImageBehavior = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(listView1);
+            Controls.Add(delete_btn);
+            Controls.Add(this.save_btn);
             Controls.Add(checkBox1);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(this.password_box);
+            Controls.Add(this.email_box);
+            Controls.Add(username_box);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -140,14 +152,15 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox username_box;
+        private TextBox email_box;
+        private TextBox password_box;
         private Label label1;
         private Label label2;
         private Label label3;
         private CheckBox checkBox1;
-        private Button button1;
-        private Button button2;
+        private Button save_btn;
+        private Button delete_btn;
+        private ListView listView1;
     }
 }

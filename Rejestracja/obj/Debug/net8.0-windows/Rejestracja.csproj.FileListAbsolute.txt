@@ -1,0 +1,17 @@
+C:\Users\szcze\Desktop\Rejestracja\Rejestracja\bin\Debug\net8.0-windows\Rejestracja.exe
+C:\Users\szcze\Desktop\Rejestracja\Rejestracja\bin\Debug\net8.0-windows\Rejestracja.deps.json
+C:\Users\szcze\Desktop\Rejestracja\Rejestracja\bin\Debug\net8.0-windows\Rejestracja.runtimeconfig.json
+C:\Users\szcze\Desktop\Rejestracja\Rejestracja\bin\Debug\net8.0-windows\Rejestracja.dll
+C:\Users\szcze\Desktop\Rejestracja\Rejestracja\bin\Debug\net8.0-windows\Rejestracja.pdb
+C:\Users\szcze\Desktop\Rejestracja\Rejestracja\obj\Debug\net8.0-windows\Rejestracja.Form1.resources
+C:\Users\szcze\Desktop\Rejestracja\Rejestracja\obj\Debug\net8.0-windows\Rejestracja.csproj.GenerateResource.cache
+C:\Users\szcze\Desktop\Rejestracja\Rejestracja\obj\Debug\net8.0-windows\Rejestracja.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\szcze\Desktop\Rejestracja\Rejestracja\obj\Debug\net8.0-windows\Rejestracja.AssemblyInfoInputs.cache
+C:\Users\szcze\Desktop\Rejestracja\Rejestracja\obj\Debug\net8.0-windows\Rejestracja.AssemblyInfo.cs
+C:\Users\szcze\Desktop\Rejestracja\Rejestracja\obj\Debug\net8.0-windows\Rejestracja.csproj.CoreCompileInputs.cache
+C:\Users\szcze\Desktop\Rejestracja\Rejestracja\obj\Debug\net8.0-windows\Rejestracja.sourcelink.json
+C:\Users\szcze\Desktop\Rejestracja\Rejestracja\obj\Debug\net8.0-windows\Rejestracja.dll
+C:\Users\szcze\Desktop\Rejestracja\Rejestracja\obj\Debug\net8.0-windows\refint\Rejestracja.dll
+C:\Users\szcze\Desktop\Rejestracja\Rejestracja\obj\Debug\net8.0-windows\Rejestracja.pdb
+C:\Users\szcze\Desktop\Rejestracja\Rejestracja\obj\Debug\net8.0-windows\Rejestracja.genruntimeconfig.cache
+C:\Users\szcze\Desktop\Rejestracja\Rejestracja\obj\Debug\net8.0-windows\ref\Rejestracja.dll
