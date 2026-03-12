@@ -162,5 +162,6 @@
         private Button save_btn;
         private Button delete_btn;
         private ListView listView1;
+        private string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
     }
 }

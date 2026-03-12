@@ -1,3 +1,5 @@
+using System.Text.RegularExpressions;
+
 namespace Rejestracja
 {
     public partial class Form1 : Form
@@ -26,42 +28,46 @@ namespace Rejestracja
         {
             if (username_box.Text == "")
             {
-                MessageBox.Show("Nazwa użytkownika jest pusta");
+                MessageBox.Show("Nazwa użytkownika jest pusta.");
                 return;
+            }
+
+            foreach (ListViewItem account in listView1.Items)
+            {
+                if (account.SubItems[0].Text == username_box.Text)
+                {
+                    MessageBox.Show("Nazwa użytkownika jest już zajęta.");
+                    return;
+                }
             }
 
             if (email_box.Text == "")
             {
-                MessageBox.Show("Email jest pusty");
+                MessageBox.Show("Email jest pusty.");
                 return;
             }
 
-            if (password_box.Text == "")
+            if (Regex.IsMatch(password_box.Text, pattern))
             {
-                MessageBox.Show("Hasło jest puste");
+                MessageBox.Show("Hasło jest za słabe.");
                 return;
             }
 
             if (!terms_check.Checked)
             {
-                MessageBox.Show("Nie zaakceptowano regulaminu");
+                MessageBox.Show("Nie zaakceptowano regulaminu.");
                 return;
             }
 
             listView1.Items.Add(new ListViewItem(new string[] { username_box.Text, email_box.Text, password_box.Text }));
-
-
         }
 
         private void delete_btn_Click(object sender, EventArgs e)
         {
-           foreach (ListViewItem item in listView1.SelectedItems)
+            foreach (ListViewItem item in listView1.SelectedItems)
             {
                 listView1.Items.Remove(item);
             }
-        
-
-            
         }
     }
 }
