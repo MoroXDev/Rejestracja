@@ -41,15 +41,15 @@ namespace Rejestracja
                 }
             }
 
-            if (email_box.Text == "")
+            if (!Regex.IsMatch(email_box.Text, pattern))
             {
-                MessageBox.Show("Email jest pusty.");
+                MessageBox.Show("Email jest nieprawidłowy.");
                 return;
             }
 
-            if (Regex.IsMatch(password_box.Text, pattern))
+            if (password_box.Text == "")
             {
-                MessageBox.Show("Hasło jest za słabe.");
+                MessageBox.Show("Hasło jest puste.");
                 return;
             }
 
