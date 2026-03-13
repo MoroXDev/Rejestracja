@@ -26,7 +26,7 @@ namespace Rejestracja
 
         private void save_btn_Click(object sender, EventArgs e)
         {
-            if (username_box.Text == "")
+            if (username_box.Text.Trim() == "")
             {
                 MessageBox.Show("Nazwa użytkownika jest pusta.");
                 return;
@@ -34,22 +34,27 @@ namespace Rejestracja
 
             foreach (ListViewItem account in listView1.Items)
             {
-                if (account.SubItems[0].Text == username_box.Text)
+                if (account.SubItems[0].Text == username_box.Text.Trim())
                 {
                     MessageBox.Show("Nazwa użytkownika jest już zajęta.");
                     return;
                 }
             }
 
-            if (!Regex.IsMatch(email_box.Text, pattern))
+            if (!Regex.IsMatch(email_box.Text.Trim(), pattern))
             {
                 MessageBox.Show("Email jest nieprawidłowy.");
                 return;
             }
 
-            if (password_box.Text == "")
+            if (password_box.Text.Trim() == "")
             {
                 MessageBox.Show("Hasło jest puste.");
+                return;
+            }
+            if (password_box.Text.Trim().Contains(" "))
+            {
+                MessageBox.Show("Hasło nie powinno zawierać spacji.");
                 return;
             }
 
@@ -59,7 +64,7 @@ namespace Rejestracja
                 return;
             }
 
-            listView1.Items.Add(new ListViewItem(new string[] { username_box.Text, email_box.Text, password_box.Text }));
+            listView1.Items.Add(new ListViewItem(new string[] { username_box.Text.Trim(), email_box.Text.Trim(), password_box.Text.Trim() }));
         }
 
         private void delete_btn_Click(object sender, EventArgs e)

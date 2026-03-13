@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Rejestracja")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eaa6432cae123c2f0ec6a0057e4d2dc87af5c861")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47b7071f66fa5d9d18e9d18fe3d78dc67c86a54e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Rejestracja")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Rejestracja")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
